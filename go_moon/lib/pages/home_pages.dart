@@ -12,6 +12,9 @@ class HomePages extends StatelessWidget {
     _deviceHeight = MediaQuery.of(context).size.height;
     _deviceWidth = MediaQuery.of(context).size.width;
     return Scaffold(
+      appBar: AppBar(
+        title: const Text("Martian"),
+      ),
       body: SafeArea(
         child: Container(
             height: _deviceHeight,
@@ -29,7 +32,7 @@ class HomePages extends StatelessWidget {
                   ],
                 ),
                 Align(
-                  alignment: Alignment(.25, -0.2),
+                  alignment: Alignment(.25, -0.40),
                   child: _astroImageWidget(),
                 )
               ],
@@ -43,8 +46,8 @@ class HomePages extends StatelessWidget {
       "Martian",
       style: TextStyle(
         color: Colors.white,
-        fontSize: 75,
-        fontWeight: FontWeight.w700,
+        fontSize: 65,
+        fontWeight: FontWeight.w600,
       ),
     );
   }

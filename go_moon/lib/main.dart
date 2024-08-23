@@ -6,14 +6,16 @@ void main() {
 }
 
 class App extends StatelessWidget {
-  const App({Key? key}):super(key: key);
+  const App({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'GoMoon',
-      theme: ThemeData(scaffoldBackgroundColor:Color.fromRGBO(45, 45, 45, 0.5) ),
-      home:HomePages(),
-      );
+      title: 'Martian',
+      debugShowCheckedModeBanner: false,
+      theme:
+          ThemeData(scaffoldBackgroundColor: Color.fromRGBO(45, 45, 45, 0.5)),
+      home: HomePages(),
+    );
   }
 }
